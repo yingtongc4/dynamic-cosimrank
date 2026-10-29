@@ -1,0 +1,3 @@
+scenario,edge_or_node,cells_changed,total_cells,pct,B_block_touched,dyn_vs_static
+local,1->4,3,64,4.69,False,0.000e+00
+global,hub node 9,28,81,34.57,True,4.040e-18

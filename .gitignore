@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.venv/
+venv/
+
+# SNAP datasets are not redistributed here -- see README for the download
+# links. Nothing in tests/ or the two correctness gates needs them; only the
+# timing benchmarks do.
+data/*.txt
+data/*.txt.gz
+
+# Generated outputs. The CSVs the dissertation cites are committed
+# deliberately (see below), so this only catches stray runs.
+benchmarks/results/*.tmp
+
+# Presentation and write-up tooling, not part of the method. These contain
+# absolute paths from the machine they were written on, and git history is
+# permanent once a repository is made public.
+add_notes.py
+make_docs.py
+make_ppt.py
+make_script.py

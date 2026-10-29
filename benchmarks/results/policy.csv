@@ -1,0 +1,8 @@
+strategy,K,refreshes,total_s,final_error,within_eps,min_s,max_s
+recompute,28,,20.118,8.001e-04,True
+policy,28,1,7.654,8.030e-04,True,7.557,7.725
+no refresh,28,0,7.58,8.369e-04,True,7.563,7.611
+K=20,20,0,5.577,4.993e-03,False,5.557,5.696
+
+n,m,Q,eps,K_min,K_star,T_star
+200,2414,20,0.001,26.72,28,1375

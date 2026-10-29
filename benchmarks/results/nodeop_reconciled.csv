@@ -1,0 +1,9 @@
+item,node,ms,static_ms,value
+breakdown selection,4,80.86,14.982,0.1853
+constants selection,4,62.188,18.949,0.3047
+breakdown repeat,4,54.267,13.077,0.241
+column updates (x2),,16.699,,37.1
+full sparse rebuild,,35.832,,79.7
+renumbering,,10.198,,22.7
+measured total,,44.965,,100.0
+static baseline,,11.722,,

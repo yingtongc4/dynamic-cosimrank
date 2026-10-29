@@ -1,0 +1,73 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: tests (python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+
+      # Unpinned on purpose: requirements.txt pins the versions the
+      # dissertation's measurements were taken with, while CI should also catch
+      # breakage against current releases.
+      - name: Install
+        run: python -m pip install --upgrade pip numpy scipy networkx pytest
+
+      # Covers simrank, dynamic_cosimrank, d_cosim, node_ops and edge_deletion.
+      # Measured sensitivity: a 1e-3 relative perturbation injected into the
+      # deletion update fails 10 of the 44; a 1e-6 one passes, because these
+      # tolerances predate the 1e-8 regime used in the dissertation's own
+      # correctness sweep.
+      - name: Unit tests
+        run: python -m pytest tests/ -q
+
+      # Exercises simrank and per_query against each other. Needs no dataset.
+      - name: Gate -- per-query mode against the full matrix
+        run: python benchmarks/verify_perquery.py
+
+      # Independent re-derivation in exact rational arithmetic. It imports
+      # nothing from src/, so it checks that the mathematics still holds rather
+      # than that the implementation matches it; cheap, and it guards the
+      # derivation itself.
+      - name: Gate -- exact arithmetic over the rationals
+        run: python benchmarks/verify_exact.py
+
+  reproduce:
+    name: pinned environment
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install the versions the dissertation reports
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Unit tests
+        run: python -m pytest tests/ -q
+
+      - name: Correctness gates
+        run: |
+          python benchmarks/verify_perquery.py
+          python benchmarks/verify_exact.py

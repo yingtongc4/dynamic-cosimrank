@@ -1,0 +1,2 @@
+n_nodes,n_edges,n_inserts,n_deletes,total_ms,throughput_ups,K,C
+200,3596,17,13,638.43,47.0,10,0.8

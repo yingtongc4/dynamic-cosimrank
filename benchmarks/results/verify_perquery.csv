@@ -1,0 +1,35 @@
+case,stage,max_col_rel_err,result
+BA n=60 seed=0,initial columns,2.270387e-13,PASS
+BA n=60 seed=0,after edge_insert,6.174504e-13,PASS
+BA n=60 seed=0,after edge_delete,1.598094e-12,PASS
+BA n=60 seed=0,after node_insert,7.405254e-13,PASS
+BA n=60 seed=0,after node_delete,1.617194e-12,PASS
+BA n=60 seed=1,initial columns,1.886194e-13,PASS
+BA n=60 seed=1,after edge_insert,1.100821e-12,PASS
+BA n=60 seed=1,after edge_delete,3.457667e-13,PASS
+BA n=60 seed=1,after node_insert,2.062523e-12,PASS
+BA n=60 seed=1,after node_delete,1.746811e-12,PASS
+BA n=60 seed=2,initial columns,2.255845e-13,PASS
+BA n=60 seed=2,after edge_insert,1.525198e-12,PASS
+BA n=60 seed=2,after edge_delete,6.666055e-13,PASS
+BA n=60 seed=2,after node_insert,3.709519e-12,PASS
+BA n=60 seed=2,after node_delete,2.448964e-12,PASS
+ER n=60 seed=0,initial columns,3.160562e-13,PASS
+ER n=60 seed=0,after edge_insert,1.588435e-12,PASS
+ER n=60 seed=0,after edge_delete,3.370146e-12,PASS
+ER n=60 seed=0,after node_insert,9.281852e-13,PASS
+ER n=60 seed=0,after node_delete,9.433365e-13,PASS
+ER n=60 seed=1,initial columns,3.485025e-13,PASS
+ER n=60 seed=1,after edge_insert,3.085143e-12,PASS
+ER n=60 seed=1,after edge_delete,5.832344e-13,PASS
+ER n=60 seed=1,after node_insert,6.052238e-12,PASS
+ER n=60 seed=1,after node_delete,5.848854e-12,PASS
+ER n=60 seed=2,initial columns,1.799659e-13,PASS
+ER n=60 seed=2,after edge_insert,1.800636e-13,PASS
+ER n=60 seed=2,after edge_delete,2.235930e-13,PASS
+ER n=60 seed=2,after node_insert,6.140929e-13,PASS
+ER n=60 seed=2,after node_delete,5.437334e-13,PASS
+BA n=60 seed=0,|Q|=3 vs |Q|=n,0.000000e+00,PASS
+BA n=60 seed=1,|Q|=3 vs |Q|=n,0.000000e+00,PASS
+BA n=60 seed=0,adaptive vs forced,7.815063e-13,PASS
+BA n=60 seed=1,adaptive vs forced,8.628546e-13,PASS

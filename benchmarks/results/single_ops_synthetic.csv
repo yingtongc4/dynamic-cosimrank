@@ -1,0 +1,5 @@
+operation,dynamic_ms,static_ms,speedup,frob_error
+edge_insert,6.897,1.489,0.2x,2.15e-03
+edge_delete,6.264,1.489,0.2x,3.25e-03
+node_insert,2.237,1.489,0.7x,1.05e-01
+node_delete,68.459,1.489,0.0x,1.15e-01

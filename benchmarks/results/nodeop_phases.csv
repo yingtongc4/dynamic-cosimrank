@@ -1,0 +1,7 @@
+phase,median_ms,iqr_lo_ms,iqr_hi_ms,share_pct
+columns,19.027,18.36,19.465,27.0
+renumber,12.063,11.4,13.638,17.1
+rebuild,39.22,37.849,40.165,55.6
+columns_shrink,0.081,0.074,0.093,0.1
+total,70.514,68.863,73.049,100.0
+static_baseline,18.787,,,

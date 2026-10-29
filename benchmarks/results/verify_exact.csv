@@ -1,0 +1,15 @@
+test,fixture,max_abs_diff_exact,result
+lyapunov_exact,"DAG chain, insert 0->2",0,PASS
+lyapunov_exact,"DAG chain, delete 1->2 (in-deg -> 0)",0,PASS
+lyapunov_exact,"mixed-sign, insert 3->2",0,PASS
+lyapunov_exact,"2-cycle, insert 1->0",0,PASS
+lyapunov_exact,"cyclic, delete 1->0",0,PASS
+lyapunov_exact,"node-insert step, add 3->1",0,PASS
+lyapunov_exact,"wider DAG, insert 0->5",0,PASS
+series_exact,"DAG chain, insert 0->2",0,PASS
+series_exact,"DAG chain, delete 1->2 (in-deg -> 0)",0,PASS
+series_exact,"mixed-sign, insert 3->2",-,SKIP
+series_exact,"2-cycle, insert 1->0",-,SKIP
+series_exact,"cyclic, delete 1->0",-,SKIP
+series_exact,"node-insert step, add 3->1",0,PASS
+series_exact,"wider DAG, insert 0->5",0,PASS

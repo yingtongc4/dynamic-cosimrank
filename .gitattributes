@@ -1,0 +1,8 @@
+# Normalise line endings in the repository to LF, whatever the checkout looks
+# like locally. Without this a Windows checkout can produce diffs where every
+# line of a file appears changed.
+* text=auto eol=lf
+
+# Results are data, not prose; keep them byte-exact.
+benchmarks/results/*.csv -text
+*.png binary

@@ -1,0 +1,11 @@
+op_id,operation,time_ms,frobenius_error,result
+1,"insert (70,62)",22.53,6.050617e-04,PASS
+2,"insert (35,188)",22.23,1.126495e-03,PASS
+3,"insert (173,189)",23.82,1.316895e-03,PASS
+4,"insert (151,108)",22.89,1.465948e-03,PASS
+5,"insert (7,23)",22.86,1.730979e-03,PASS
+6,"insert (59,129)",22.56,1.903778e-03,PASS
+7,"insert (143,50)",22.46,2.190889e-03,PASS
+8,"delete (65,94)",22.62,2.098410e-03,PASS
+9,"delete (78,69)",21.76,2.043881e-03,PASS
+10,"delete (37,102)",21.51,3.314229e-03,PASS

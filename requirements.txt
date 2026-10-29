@@ -1,0 +1,8 @@
+# Versions used for every measurement reported in the dissertation
+# (Windows 11, AMD64 Family 25 Model 68, Python 3.12.10).
+# Later versions are very likely fine; these are what was run.
+numpy==2.2.6
+scipy==1.17.0
+networkx==3.6.1
+matplotlib==3.10.8
+pytest==9.1.1

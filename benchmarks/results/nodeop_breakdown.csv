@@ -1,0 +1,10 @@
+component,ms,share_pct
+one column update (x2),11.229,26.8
+"full sparse rebuild, _build_A",23.044,55.0
+Python renumbering of in-neighbour sets,6.761,16.1
+measured node_delete total,41.924,100.0
+static baseline,11.387,
+
+predicted_single,2.392
+predicted_batch_b2,1.196
+measured,0.2716

@@ -1,0 +1,10 @@
+attachment,b,cells_changed,total_cells,B_block_touched,dyn_vs_static
+in-edges,1,9,121,False,0.000e+00
+out-edges,2,19,121,False,6.260e-17
+
+Q,flop_ratio,speedup,verdict
+1,2.5,0.4,recompute
+3,1.1667,0.8571,recompute
+4,1.0,1.0,recompute
+5,0.9,1.1111,update
+11,0.6818,1.4667,update
